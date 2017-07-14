@@ -1,6 +1,6 @@
 # Version 1.0
 
-FROM centos:latest
+FROM  docker.io/centos:7.3.1611
 
 MAINTAINER soft456@gmail.com
 
@@ -15,7 +15,7 @@ RUN groupadd -f www \
  && chown -R nginx.www /usr/local/nginx
 
 
-ENV NGINX_VERSION 1.10.1
+ENV NGINX_VERSION 1.12.1
 ENV NGINX_PREFIX /usr/local/nginx
 ENV NGINX_LOG /var/log/nginx/
 
