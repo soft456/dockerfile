@@ -2,10 +2,10 @@
 ## nginx 镜像
 包含centos 7.3.1611 和 nginx 1.12.1
 
-#### 下载及镜像编译：
-git clone https://github.com/soft456/dockerfile.git
-cd nginx
-docker build -t nginx:v1.12 .
+#### 下载及镜像编译： 
+git clone https://github.com/soft456/dockerfile.git  
+cd nginx  
+docker build -t nginx:v1.12 .  
 
 #### 创建容器：
 docker run -it -d --name=nginx -v /etc/localtime:/etc/localtime:ro -v /webapp/www:/webapp/www:Z -p 81:80 nginx:v1.12 /bin/bash
