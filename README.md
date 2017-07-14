@@ -1,5 +1,3 @@
-# dockerfile
-常用dockerfile
 
 ## nginx 镜像
 包含centos 7.3.1611 和 nginx 1.12.1
